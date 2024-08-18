@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: python3
+  name: python3
+spec:
+  containers:
+  - args:
+    - sleep
+    - infinity
+    image: python:3.9.19-bullseye
+    name: python3
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
